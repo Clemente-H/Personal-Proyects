@@ -15,7 +15,7 @@ df = pd.read_csv(path ,delimiter=';')
 qr_code = qrcode_scanner(key='qrcode_scanner')
 
 if qr_code:
-    st.write(qr_code)
+    #st.write(qr_code)
     url = qr_code
     # Analizar la URL y extraer los parámetros de consulta
     parsed_url = urlparse(url)
