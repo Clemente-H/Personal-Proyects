@@ -4,7 +4,14 @@ from urllib.parse import urlparse, parse_qs
 from datetime import datetime
 import streamlit_authenticator as stauth
 import pandas as pd
-df = pd.read_csv('PersonasAllowed.csv',delimiter=';')
+
+from pathlib import Path
+
+path = Path(__file__).parents[0] / 'PersonasAllowed.csv'
+
+print(path)
+
+df = pd.read_csv(path ,delimiter=';')
 qr_code = qrcode_scanner(key='qrcode_scanner')
 
 if qr_code:
