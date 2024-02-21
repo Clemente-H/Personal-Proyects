@@ -4,5 +4,5 @@ streamlit_qrcode_scanner
 streamlit-authenticator
 pandas
 qreader
-opencv-python
 streamlit-camera-input-live
+opencv-python-headless 
