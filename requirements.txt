@@ -6,3 +6,4 @@ pandas
 qreader
 streamlit-camera-input-live
 opencv-python-headless 
+streamlit-webrtc
